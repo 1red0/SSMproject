@@ -22,7 +22,6 @@ body{
 nav{
     width: 600px;
     height: 60px;
-    border-radius: 5px;
     background: #fff;
     display: flex;
     align-items: center;
@@ -37,8 +36,7 @@ nav label{
     line-height: 60px;
     font-size: 18px;
     font-weight: 400;
-    border-radius: 5px;
-    margin: 0 5px;
+    margin: 0;
     color: black;
     cursor: pointer;
     position: relative;
@@ -49,9 +47,6 @@ nav label:hover{
     background: rgba(0, 0, 0, 0.3);
 }
 
-nav label i{
-    margin-right: 4px;
-}
 
 .slider{
     position: absolute;
@@ -60,7 +55,6 @@ nav label i{
     background: #000;
     left: 0;
     top: 0;
-    border-radius: 5px;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -88,3 +82,10 @@ nav label i{
     left: 80%;
 }
 
+body{
+    background-image: url('/assets/images/background.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
