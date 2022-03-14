@@ -83,8 +83,10 @@ nav label:hover{
 }
 
 body{
-    background-image: url('/assets/images/background.gif');
+    background-image: url(/assets/images/bg.png);
     background-size: cover;
+    background-repeat: repeat-y;
+    background-color: darkslategrey;
     height: 100vh;
     padding:0;
     margin:0;
