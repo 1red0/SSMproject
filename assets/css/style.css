@@ -134,3 +134,57 @@ body{
     outline: none;
     background-color: #44b927;
   }
+
+  .textContainer{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    box-shadow: 5px 10px;
+  }
+
+  .wrapper{
+    width: 1500px;
+    height: auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  #homediv {
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    
+  }
+  #cap1div{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    z-index: 0;
+    
+  }
+  #cap2div{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    z-index: 0;
+  }
+
+  #cap3div{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    z-index: 0;
+  }
+  
+  #testdiv{
+    width: 100%;
+    height: 100%; 
+    z-index: 0;
+  }
+
+  
