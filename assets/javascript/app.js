@@ -145,9 +145,9 @@ function fcap3() {
 }
 
 if (document.getElementById("test").addEventListener) {
-    document.getElementById("test").addEventListener("click", fcontact, false);
+    document.getElementById("test").addEventListener("click", fquiz, false);
 }
-function fcontact() {
+function fquiz() {
 
     document.getElementById("homediv").style.visibility = "hidden";
     document.getElementById("cap1div").style.visibility = "hidden";
