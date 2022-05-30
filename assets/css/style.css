@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+
+a.one:link {color:hsl(103, 69%, 25%); text-decoration: none;}
+a.one:visited {color:#000000;}
+a.one:hover {color:hsl(103, 69%, 25%);}
+
+
 h1, h2, h3{
   text-align: center;
 }
@@ -17,6 +24,7 @@ p{
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  
 }
 
 #tabelcon td, #tabelcon th {
