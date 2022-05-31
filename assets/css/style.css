@@ -58,6 +58,8 @@ body{
     overflow: hidden;
     margin: 0;
     background: #f2f2f2;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .container{
@@ -238,15 +240,14 @@ body{
   }
 
   .btn-contact{
-    
-    bottom: 0;
-    position: absolute;
+    position:relative;
+    left: 25%;
 
   }
 
   .btn-home{
     
-    bottom: 0;
+    top: 0;
     position: absolute;
 
   }
