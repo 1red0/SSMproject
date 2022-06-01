@@ -284,17 +284,260 @@
                 <div class="containerContinut"  id="2c2">
                   <!-- Variabile -->
                   <h1>Variabile</h1>
+                  <br><br>
 
+                  <a style="font-size: 1.3rem;">Varabilele sunt ca niste recipiente care retin valori de diferite tipuri. 
+                  De exemplu, o sticla poate contine lapte sau suc. Din aceasta perspectiva, sticla este numele recipientului, 
+                  iar continutul (laptele, sucul) poate fi vazut ca valoarea recipentului (una e valoarea sau pretul laptelui, una este pretul sucului).
+                  <br><br>Numele variabilelor in Python trebuie sa respecte niste reguli:
+                  </a>
+                  <li style="font-size: 1.2rem;">trebuie sa contina doar litere mici (a-z), litere mari (A-Z) si _ (underscore) - si nu doar litere/caractere latine (adica se poate folosi de exemplu: û)</li>
+                  <li style="font-size: 1.2rem;">trebuie sa inceapa cu o litera sau _ (underscore)</li>
+                  <li style="font-size: 1.2rem;">nu trebuie sa fie un nume rezervat (keyword):
+                    <strong>'False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 
+                    'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'</strong>
+                  </li>
+                  <br><br>
+                  <a style="font-size: 1.3rem;">Python este un limbaj tipizat dinamic (dynamically-typed language) (nu e nevoie de declarearea unui variabile; unei variabile se asigneaza o valoare):</a>
+                  <li style="font-size: 1.3rem;"><strong>nume_variabila = valoare_variabila</strong></li>
+                  <li style="font-size: 1.3rem;"><strong>nume_variabila = expresie</strong></li>
+                  <a style="font-size: 1.3rem;"><strong>Observatie:</strong></a>
+                  <li style="font-size: 1.3rem;">nu este permisa folosirea unei variable care nu exista, nu i-a fost asignata o valoare</li>
+                  <br><br>
+                  <a style="font-size: 1.3rem;">Numele variabilelor in Python sunt case-sensitive (de exemplu, variabile rezultat si Rezultat sunt vazute ca 2 variabile diferite).</a>
+                  <br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;rezultat=72<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Rezultat=31<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;_=1<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;u=2<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(rezultat)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(Rezultat)<br>
+                  </a>
+                  <a style="font-size: 1.3rem;">Rezultatul va fi:</a><br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;72<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;31<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;1<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;2<br>
+                  </a><br><br>
+                  <a style="font-size: 1.3rem;"><strong>Conventii de nume:</strong></a><br>
+                  <li style="font-size: 1.3rem;">numele de variabile ar fi bine sa inceapa contina doar litere mici, iar cuvintele sa fie 
+                    despartite pentru liziblitate prin _ (underscore): cal, cal_de_lupta</li>
+                  <li style="font-size: 1.3rem;">numele de functii ar trebuie sa respecte acelasi conventii ca numele de variabile</li>
+                  <li style="font-size: 1.3rem;">se poate folosi si conventia ca in loc de _ sa se puna fiecare cuvant al variabilei cu litera mare, in afara de primul cuvant: cal, calDeLupta</li>
+                  <br><br>
+                  <a style="font-size: 1.3rem;">Se poate asigna si o expresie. De exemplu:</a><br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;text1 = "a_" + str(1)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text2 = "a_" + "57"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;x = 2 + 7print(text1)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(text2)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(x)<br>
+                  </a>
+                  <a style="font-size: 1.3rem;">Rezultatul va fi:</a><br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;a_1<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;a_57<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;10<br>
+                  </a>
+                  <br><br>
+                  <a style="font-size: 1.3rem;"><strong>Observatie:</strong><br>
+                    Concatenarea cu string-uri se face cu operatorul "+" (si toti operanzii trebuie sa fie de tip string, de aceea am convertit 1, folosind functie str() la string) <br><br>Exemplu 2:
+                    </a><br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;sarpe=300;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;eva=1;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;adam=0;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;total_mere = sarpe + eva + adam;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Sarpe",sarpe,"/Eva",eva,"/Adam",adam,sep='')<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Numarul total de mere:",total_mere)<br>
+                  </a><br>
+                  <a style="font-size: 1.3rem;">Rezultatul va fi:</a><br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;Sarpe=300=/Eva=1=/Adam=0<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Numarul total de mere: 301<br>
+                  </a><br><br>
+                  <a style="font-size: 1.3rem;"><strong>Operatori shortcut</strong> (sau <strong>operatori de asignare compusi / compound assignment operators</strong>):</a><br>
+                  <li style="font-size: 1.3rem;">nume_variabila = nume_variabila <strong>operator</strong> expresie este echivalent cu:</li>
+                  <li style="font-size: 1.3rem;">nume_variabila <strong>operator</strong>= expresie</li>
+                  <br><a style="font-size: 1.3rem;">Exemplu:</a><br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;y = 5<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;y = y + 2 # y +=2<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(y)<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;x = 5<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;x += 2 # x = x+ 2<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(x)<br>
+                  </a>
+                  <br><a style="font-size: 1.3rem;">Rezultatul va fi:</a><br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;7<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;7<br>
+                  </a>
                   <br><br><br><br>
 
                   <!-- Cateva observatii de caractere -->
                   <h1>Cateva observatii de caractere</h1>
+                  <br><br>
+
+                  <a style="font-size: 1.3rem;">Calculatoarele stocheaza caracterele ca numere. Există mai multe moduri posibile de codificare a caracterelor. Exemple:</a>
+                  <ul style="list-style-type: disc; margin-left: 5%;">
+                    <li><strong>ASCII</strong>: (American Standard Code for Information Interchange) codifica alfabetul latin și unele dintre derivatele acestuia (are spartiu pentru 256 de caractere)</li>
+                    <li><strong>UNICODE</strong>: codifica toate alfabetele, folosind diferite moduri de codare:</li>
+                      <ul style="list-style-type: circle; margin-left: 3%;">
+                        <li><strong>UCS-4</strong>: (Universal Character Set):
+                          UCS-4 folosește 32 de biți (patru octeți) pentru a stoca fiecare caracter, iar codul este doar numărul unic al punctelor de cod Unicode.<br>
+                          Un fișier care conține text codificat UCS-4 poate începe cu un BOM (byte order mark), o combinație de biți care nu poate fi imprimată care anunță natura conținutului fișierului.
+                          </li>
+                        <li><strong>UTF-8</strong>: (Unicode Transformation Format) foloseste mai putin memorie, pentru ca folosește doar cati biti are nevoie pentru a reprezenta un punct de cod (8 biti pentru caracterele 
+                          latine, 16 biti pentru non-latine, 24 biti idiograme (China, Japonia, Korea ) )</li>
+                      </ul>
+                  </ul>
+                  <br><br><a style="font-size: 1.3rem;">Un numar poate convertit la String folosind functia <strong>str()</strong>.<br><br>
+                    <br>Exemplu:
+                    </a><br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;print("A"+"B")</a><br><br>
+                  <br><a style="font-size: 1.3rem;">Rezultat:</a><br>
+                  <a>&nbsp;&nbsp;&nbsp;&nbsp;AB</a>
 
                   <br><br><br><br>
 
                   <!-- Operatori relationali si logici -->
                   <h1>Operatori relationali si logici</h1>
+                  <br><br>
 
+                  <a style="font-size: 1.3rem;">Operatori relationali:</a>
+                  <li style="font-size: 1.3rem;">== (egalitate)</li>
+                  <li style="font-size: 1.3rem;">!= (diferit)</li>
+                  <li style="font-size: 1.3rem;">> (mai mare)</li>
+                  <li style="font-size: 1.3rem;">>= (mai mare sau egal)</li>
+                  <li style="font-size: 1.3rem;">< (mai mic)</li>
+                  <li style="font-size: 1.3rem;"><= (mai mic sau egal)</li>
+                    <br><br><a style="font-size: 1.3rem;">Operatorii relationali sunt evaluati de la stanga la dreapta (<strong>left-sided binding</strong>).<br>
+                      <br><br><br>Operatori logici:
+                      </a>
+                      <ul style="list-style-type: disc; margin-left: 5%;">
+                        <li><strong>and</strong> (conjunctie): operator binar cu o prioritate mai mică decât cea exprimată de operatorii de comparare (relationali)
+                          de exemplu, daca avem expresia: a==1 and b==2, <strong>and</strong> are prioritate mai mica decat operatorii relationali, in sensul ca se evalueaza a==1, apoi b==2, si abia apoi se efectueaza <strong>and</strong>
+                        </li>
+                        <table id="prioritytable">
+                          <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>A and B</th>
+                          </tr>
+                          <tr>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                          </tr>
+                          <tr>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                          </tr>
+                          <tr>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>False</td>
+                          </tr>
+                          <tr>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>False</td>
+                          </tr>
+                        </table>
+                        <a>Exemplu:</a><br>
+                        <a>&nbsp;&nbsp;&nbsp;&nbsp;a=4<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;b=10<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;c=a and b<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;print(c)<br>
+                        </a>
+                        <a>Rezultat:</a><br>
+                        <a>&nbsp;&nbsp;&nbsp;&nbsp;10<br></a>
+                        <li><strong>or</strong> (disjunctie): operator binar cu o prioritate mai mică decât <strong>and</strong>, adica se evalueza <strong>and</strong> mai intai de exemplu: a==1 and b==2 or c==3 este echivalent cu (a==1 and b==2) or c==3 (<strong>prioritate mai mica, adica se evalueaza mai tarziu</strong>)</li>
+                        <table id="prioritytable">
+                          <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>A or B</th>
+                          </tr>
+                          <tr>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                          </tr>
+                          <tr>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>True</td>
+                          </tr>
+                          <tr>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>True</td>
+                          </tr>
+                          <tr>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>False</td>
+                          </tr>
+                        </table>
+                        <a>Exemplu:</a><br>
+                        <a>&nbsp;&nbsp;&nbsp;&nbsp;a=4<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;b=10<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;c=a or b<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;print(c)<br>
+                        </a>
+                        <a>Rezultat:</a><br>
+                        <a>&nbsp;&nbsp;&nbsp;&nbsp;10<br></a>
+                        <li><strong>not</strong> (negatie): prioritatea este foarte mare: la fel ca + și - (unare)</li>
+                        <table id="prioritytable">
+                          <tr>
+                            <th>A</th>
+                            <th>not A</th>
+                          </tr>
+                          <tr>
+                            <td>True</td>
+                            <td>False</td>
+                          </tr>
+                          <tr>
+                            <td>False</td>
+                            <td>True</td>
+                          </tr>
+                        </table>
+                        <a>Exemplu:</a><br>
+                        <a>&nbsp;&nbsp;&nbsp;&nbsp;a=0<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;print(not(a))<br>
+                        </a>
+                        <a>Rezultat:</a><br>
+                        <a>&nbsp;&nbsp;&nbsp;&nbsp;True<br></a>
+                      </ul>
+                      <br><br><a style="margin-left: 45%;"><strong>Tabel de prioritati:</strong></a>
+                      <table id="priority2table">
+                        <tr>
+                          <th>Prioritate</th>
+                          <th>Operatori</th>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>+,-(operatori binari)</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>**e</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>*,/,//,%</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>+,-(operatori unari)</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td><,<=,>,>=</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>==,!=</td>
+                        </tr>
+                      </table>
                   <br><br><br><br>
 
         
@@ -315,17 +558,249 @@
                 <div class="containerContinut"  id="2c3">
                   <!-- Operatori pe biti -->
                   <h1>Operatori pe biti</h1>
+                  <a style="font-size: 1.3rem;">Operatori pe biti:</a>
+                  <br>
 
+                  <a style="font-size: 1.3rem;">•	& (si/conjunctie)</a>
+                  <br>
+                  <br><a style="font-size: 1.3rem;">Exemplu:</a><br>
+                  <a style="font-size: 1.5rem; color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Să calculăm 13 & 151.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Reprezentarea lui 13 este 0000000000001101.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Reprezentarea lui 151 este 0000000010010111<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;0000000000001101 &<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;0000000010010111<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Se obține: 0000000000000101, adică 5
+                    Deci: 13 & 151 == 5
+                    <br></a>
+
+                    </a>
+                  <br>
+
+                  <a style="font-size: 1.3rem;">•	| (sau/disjunctie)</a>
+                  <br><br>
+                  <br><a style="font-size: 1.3rem;">Exemplu:</a><br>
+                  <a style="font-size: 1.5rem; color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Să calculăm 13 & 151.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Reprezentarea lui 13 este 0000000000001101.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Reprezentarea lui 151 este 0000000010010111<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;0000000000001101 |<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;0000000010010111<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Se obține:0000000010011111, adică 159 Deci: 13 | 151 = 159
+                    
+                    <br></a>
+
+                  <a style="font-size: 1.3rem;">•	^ (or exclusiv)</a>
+                  <br><br>
+                  <br><a style="font-size: 1.3rem;">Exemplu:</a><br>
+                  <a style="font-size: 1.5rem; color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Să calculăm 13 ^ 151.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Reprezentarea lui 13 este 0000000000001101.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Reprezentarea lui 151 este 0000000010010111<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;0000000000001101 ^<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;0000000010010111<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Se obține:
+                    0000000010011010, adică 154
+                    Deci: 13 ^ 151 = 154
+                    
+                    
+                    <br></a>
+
+                  <a style="font-size: 1.3rem;">• ~ (negatie)</a>
+                  <br><br>
+                  <br><a style="font-size: 1.3rem;">Exemplu:</a><br>
+                  <a style="font-size: 1.5rem; color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;~ 133 = -134<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Reprezentarea lui 133 este 0000000010000101. Prin complementare se obține 1111111101111010. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Aceasta este reprezentarea în memorie a lui -134.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Pentru a verifica, îl reprezentăm conform celor de mai sus pe -134:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;-	reprezentarea lui 134 este 0000000010000110<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;-	prin complementare se obține 1111111101111001<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;-	adunăm 1 și obținem 1111111101111010
+                    
+                    <br></a>
+
+                  <a style="font-size: 1.3rem;">•	<< (deplasare spre stânga / binary left shift)</a>
+                  <br><br>
+                  <br><a style="font-size: 1.3rem;">Exemplu:</a><br>
+                  <a style="font-size: 1.5rem; color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Să calculăm 13 << 3.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Reprezentarea lui 13 este 0000000000001101. Deplasând toți biții spre stânga cu 3 poziții se obține:  <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;0000000001101000, adică 104.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Să observăm că 104 este egal cu 13 * 2^3.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;În general n << k este n * 2^k.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Pentru a calcula 2^n putem folosi operația 1 << n.<br>
+                    
+                    <br></a>
+                  <a style="font-size: 1.3rem;">•	>> (deplasare spre dreapta / binary right shift)</a>
+                  <br><br>
+                  <br><a style="font-size: 1.3rem;">Exemplu:</a><br>
+                  <a style="font-size: 1.5rem; color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Să calculăm 133 >> 3.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Reprezentarea lui 133 este 0000000010000101. Deplasând toți biții spre dreapta cu 3 poziții se obține:  <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;0000000000010000 adică 16.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Să observăm că 16 este egal cu 133 / 23.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;În general n >> k este n / 2k<br>
+
+                  <a style="font-size: 1.3rem;">Simplificat:</a>
+                  <br>
+
+                  <a style="font-size: 1.3rem;">•	& necesită exact doi 1 pentru a furniza 1 ca rezultat; echivalent: A*B sau min(A,B)</a>
+                  <br>
+
+                  <a style="font-size: 1.3rem;">•	| necesită cel puțin un 1 pentru a furniza 1 ca rezultat; echivalent cu: max(A,B)</a>
+                  <br>
+                  <a style="font-size: 1.3rem;">•	^ necesită exact un 1 pentru a furniza 1 ca rezultat</a>
+                  <br>
+                  <br><br>
+                  <br></a>
+                  <a style="font-size: 1.3rem;">Fie x un numar intreg. Atunci, avem:</a>
+                  <br>
+
+                  <a style="font-size: 1.3rem;">•	x & 1 = x</a>
+                  <br>
+
+                  <a style="font-size: 1.3rem;">•	x & 0 = 0</a>
+                  <br>
+                  <a style="font-size: 1.3rem;">•	x | 1 = 1</a>
+                  <br>
+                  <a style="font-size: 1.3rem;">•	x | 0 = x</a>
+                  <br>
+                  <a style="font-size: 1.3rem;">•	x ^ 1 = ~x</a>
+                  <br>
+                  <a style="font-size: 1.3rem;">•	x ^ 0 = x</a>
+                  <br>
+                  <a style="font-size: 1.3rem;">Presupunem ca avem o valoare. Si acea valoare, este formata din biti. Putem sa vedem ca fiecare bit este o stare. Sa zicem ca avem valoarea 5, in binar fiind reprezentat ca 101. Si acum, daca pe pozitia 3 din reprezentarea binara a numarului nostru este 1, atunci sistemul care verifica asta, va porni un cantecel in limba franceza.</a>
+                  <br>
+                  <br><a style="font-size: 1.3rem;">1. Verificare bit (cu &):</a><br>
+                  <br>
+                  <a style="font-size: 1.3rem;">Acum, sa invatam sistemul/programul sa faca verificarea de care am zis mai sus. In primul rand creem o masca cu valoare egala cu 2^(3-1), adica 4 (in binar 100): <br>
+                  </a>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;masca = 4 #vrem sa verificam bitul de pe pozitia 3</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;numarul_nostru = 5 #101</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print(numarul_nostru & masca) # va returna o valoare masca</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;alt_numar = 3 #011</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print(alt_numar & masca) # va returna 0</a>
+                  <br>
+                  <br><a style="font-size: 1.3rem;">2. Setare bit (cu |):</a><br>
+                  <br>
+                  <a style="font-size: 1.3rem;">Acum, sa invatam sistemul/programul sa seteze valoarea 1 pe bitul de pe pozitia 3. Folosind aceeasi masca, cu valoare egala cu 2^(3-1), adica 4 (in binar 100):</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;masca = 4 #vrem sa verificam bitul de pe pozitia 3</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;alt_numar = 3 #011</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print(alt_numar & masca) # va returna o valoare masca</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;set_1 = alt_numar | masca</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print(set_1)</a>
+                  <br>
+                  <br><a style="font-size: 1.3rem;">3. Resetare bit (cu & si ~ pe masca):</a><br>
+                  <br>
+                  <a style="font-size: 1.3rem;">Acum, sa invatam sistemul/programul sa reseteze valoarea 1 pe bitul de pe pozitia 3. Folosind aceeasi masca, cu valoare egala cu 2^(3-1), adica 4 (in binar 100): <br>
+                  </a>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;masca = 4 #vrem sa verificam bitul de pe pozitia 3</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;numarul_nostru = 5 #101</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print(numarul_nostru & ~masca) # 001, deci 1</a>
+                  <br><a style="font-size: 1.3rem;">4. Negarea bit (cu ^ - adica, daca e 0 sa devina 1 si daca e 1 sa devina 0):</a><br>
+                  <br>
+                  <a style="font-size: 1.3rem;">Acum, sa invatam sistemul/programul sa reseteze valoarea 1 pe bitul de pe pozitia 3. Folosind aceeasi masca, cu valoare egala cu 2^(3-1), adica 4 (in binar 100):</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;masca = 4 #vrem sa verificam bitul de pe pozitia 3</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;numarul_nostru = 5 # 101</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print(alt_numar ^ masca) # 001, deci 1</a>
+                  <br>
+                  <br><br>
                   <br><br><br><br>
 
                   <!-- Functii -->
                   <h1>Functii</h1>
+                  <a style="font-size: 1.3rem;">
 
+                    Un spaţiu de nume, numit şi namespace sau scope, este folosit pentru izolarea codului. Un spaţiu de nume nu este creat în mod direct, ci prin intermediul altor structuri care determină crearea unui astfel de spaţiu.
+                    
+                    Structurile care determină crearea unui spaţiu de nume sunt funcţiile şi clasele. Structuri precum if, with, while, for etc nu determină crearea unui nou spaţiu de nume, deci variabilele definite în interiorul acestora vor fi vizibile şi după încheierea lor.
+                    
+                    Un spaţiu de nume ne determină componentele la care avem acces (variabile, funcţii, clase etc). Spaţiile de nume pot fi incluse unul în altul, iar spaţiul inclus va avea acces atât la componentele definite în interiorul său, cât şi la cele definite în spaţiile de nume superioare (care îl includ).
+                    Spaţiul de nume în care ne găsim odată cu deschiderea unui nou fişier Python poartă numele de spaţiu global, iar orice spaţiu de nume inclus în acesta va fi numit spaţiu de nume local. O variabilă definită în spaţiul de nume global se numeşte variabilă globală, iar o variabilă definită în spaţiul de nume local se numeşte variabilă locală. La ieşirea dintr-un spaţiu de nume local, toate componentele acestuia vor fi şterse din memorie.
+                    
+                    Dacă denumirea unei variabile locale coincide cu una dintr-un spaţiu de nume superior, ea va "masca" acea variabilă. Numele unei variabile este doar atât, un nume, referinţa (adresa în memorie) acesteia este cea care contează pentru Python. Acest lucru ne împiedică totuşi să mai accesăm acea variabilă globală din spaţiul de nume local, deci trebuie să aveţi grijă ce mascaţi.
+                    
+                    Funcţii
+                    În lecţiile precedente am tot utilizat funcţii pentru a efectua diverse operaţii, astăzi vom învăţa cum să ne creăm propriile funcţii.
+                    O funcţie ne permite gruparea mai multor linii de cod cu scopul de a reduce duplicarea codului.  <br>
+                  </a>
+                  <a style="font-size: 1.3rem;">Putem defini o functie astfel:</a> <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;def nume_functie(arg1, arg2):</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;""" informatii despre functie """</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;     print(arg1, arg2)</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;     return 0</a>
+                  <br>
+                  <a style="font-size: 1.3rem;">
+
+                    Unde def este cuvântul cheie care indică definirea unei noi funcţii, nume_functie este numele funcţiei ales de noi (cu aceleaşi restricţii şi recomandări ca denumirea unei variabile), iar între paranteze vor fi precizaţi parametrii funcţiei (dacă nu există, lăsăm parantezele goale).
+
+                    Comentariul delimitat de ghilimele triple (""") şi precizat imediat sub definiţia funcţiei poartă numele de docstring şi este folosit pentru a oferi detalii despre funcţia în care se află (detaliile includ informaţii despre rolul funcţiei, tipurile de date şi descrierea argumentelor şi tipul de date returnat). Prezenţa unui docstring nu este obligatorie, însă aceasta poate face codul mult mai clar şi poate uşura menţinerea acestuia. Mai mult, prezenţa unui docstring pentru fiecare funcţie este recomandată şi de standardul PEP8.
+                    
+                    Sintagma return este de asemenea opţională. Aceasta este folosită pentru a returna o valoare la finalul execuţiei funcţiei. Dacă această instrucţiune nu este precizată, funcţia nu va returna nimic, ceea ce este echivalent cu a spune return None, unde None este un cuvânt cheie în Python care indică absenţa unei valori (diferit de 0 care este un număr întreg). De asemenea, pot exista mai multe instrucţiuni return într-o funcţie, însă prima întâlnită va fi cea executată. Odată executată instrucţiunea return, funcţia se va termina chiar dacă mai există cod sub aceasta.
+                    
+                    Observaţi caracterul : de la finalul definiţiei funcţiei, care ne indică începerea unui nou bloc de cod şi prezenţa indentării pentru blocul de cod atribuit funcţiei. Acestea fac parte din sintaxă şi sunt obligatorii.
+                    
+                    Parametrii unei funcţii sunt variabile locale în aceasta, iar orice variabilă definită în interiorul unei funcţii va fi, de asemenea, locală. Asta înseamnă că, la terminarea funcţiei, variabilele respective nu vor mai fi vizibile în spaţiul de nume exterior.
+                    
+                    Pentru a apela o funcţie este suficient să îi precizăm numele urmat de paranteze rotunde (în interiorul cărora pot fi specificate valori pentru parametrii acesteia, dacă este cazul).
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;>>> nume_functie("a", 3)</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;a 3</a>
+                  <br>
+                  </a>
+                  <a style="font-size: 1.3rem;">Dacă vrem să păstrăm valoarea returnată de o funcţie, este suficient să o atribuim unei variabile</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;>>> x = nume_functie("a", 3)</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;a 3</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;>>> x</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;0</a>
+                  <br>
+                  <a style="font-size: 1.3rem;">Parametrii de mai sus poartă numele de parametrii poziţionali, iar prezenţa lor ne obligă să le specificăm o valoare în momentul apelării funcţiei. Mai mult, ordinea în care dăm valorile contează (de aici numele de poziţionali).
+
+                    Un alt mod de a apela funcţia este specificând numele fiecărui parametru şi valoarea atribuită acestuia. Parametrii specificaţi astfel la apelare poartă numele de keyword arguments, şi ne permit să specificăm parametrii în orice ordine dorim (chiar dacă sunt parametrii poziţionali):
+                  </a> <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;>>> nume_functie(arg2=3, arg1="a")</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;a 3</a>
+                  <br>
+                  <br>
+                  <br>
                   <br><br><br><br>
 
                   <!-- Module -->
                   <h1>Module</h1>
+                  <a style="font-size: 1.3rem;">
 
+                    Asemenea funcţiilor, modulele reprezintă o modalitate de a organiza codul cu scopul de a uşura reutilizarea acestuia. Spre deosebire de funcţii, însă, unde erau grupate doar blocuri de cod, modulele pot conţine funcţii, clase şi variabile. Mai mult, modulele pot importa şi utiliza componentele altor module. Altfel spus, un modul este un fişier Python care poate fi importat în alte module cu scopul de a reutiliza structuri de cod definite în acesta. Pentru a crea un modul trebuie doar să salvăm fişierul care conţine codul de interes pentru noi într-un fişier cu extensia .py. Acum dacă deschidem un alt fişier (alt modul) şi vrem să refolosim cod din primul modul, suntem obligaţi să îl importăm mai întâi. Importul unui modul se face astfel:<br>
+                  </a>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;import nume_modul</a>
+                  <br>
+                  <a style="font-size: 1.3rem;">unde nume_modul reprezintă numele modulului pe care vrem să îl importăm. Şi putem apela o funcţie din interiorul acestuia prin:</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;nume_modul.nume_functie()</a>
+                  <br>
                   <br><br><br><br>
 
         

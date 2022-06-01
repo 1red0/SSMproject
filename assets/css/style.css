@@ -65,6 +65,27 @@ p{
 
 #prioritytable tr:hover {background-color: rgb(199, 199, 199);}
 
+#priority2table {
+  border-collapse: collapse;
+  width: 30%;
+  margin-left: 35%;
+  border: 1;
+}
+
+#priority2table th{
+  background-color: rgb(100, 197, 218);
+}
+
+#priority2table td{
+  background-color: rgb(233, 238, 239);
+}
+
+#priority2table th, #prioritytable td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
 h4{
   text-align: center;
   text-transform: uppercase;
