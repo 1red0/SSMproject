@@ -48,17 +48,31 @@ p{
 
 #prioritytable {
   border-collapse: collapse;
-  width: 100%;
+  width: 30%;
+  margin-left: 35%;
+  border: 1;
+}
+
+#prioritytable th{
+  background-color: rgb(136, 203, 165);
 }
 
 #prioritytable th, #prioritytable td {
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
-#prioritytable tr:hover {background-color: rgb(85, 130, 131);}
+#prioritytable tr:hover {background-color: rgb(199, 199, 199);}
 
+h4{
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+  padding: 8px;
+  font-size: 4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .cuprins{ 
   position: absolute;
   margin: auto;
