@@ -88,9 +88,71 @@
                   <br>
 
                   <a style="font-size: 1.3rem;">Pentru a distinge cuvintele obișnuite de numele funcțiilor, vom pune o pereche de paranteze goale după numele lor, chiar dacă funcția corespunzătoare necesită unul sau mai multe argumente (de exemplu, vom scrie print()).</a>
+                  <br><br><br>
 
+                  <a style="font-size: 1.3rem;">Functiile pot fi:</a>
+                  <li style="font-size: 1.3rem;">incorporate (build-in) (de exemplu, functia <strong>print()</strong>  sau <strong>min()</strong> sau <strong>max()</strong>)</li>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print(max(1,2,3))</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print(min(1,2,3))</a>
+                  <li style="font-size: 1.3rem;">din module cu care vine Python sau module instalate separate</li>
+                  <li style="font-size: 1.3rem;">proprii - scrise de tine (numele date funcției ar trebui să fie semnificativ, sa insemne ceva)</li>
+                  <br><br>
 
-
+                  <a style="font-size: 1.3rem;">O functie poate avea 0 sau mai multe argumente.<br><br>
+                    Pentru functia print() singurul argument este un String (sir de caractere) - tipul de date String este delimitat cu ghilimele:</a>
+                  <br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print("Buna!")</a>
+                  <br><br>
+                  <a style="font-size: 1.3rem;">Numele functiei, impreuna cu parenteze si agrumentele sale reprezinta invoarea functiei. La invocarea unei functii, Python:</a>
+                  <br>
+                  <li style="font-size: 1.2rem;">verifică dacă numele functiei este legal (adica este definita/exista undeva; daca nu exista, se arunca eroare)</li>
+                  <li style="font-size: 1.2rem;">verifică dacă se trimit argumentele necesare (tipul si numarul de argumente; daca nu se respecta signatura, se arunca eroare)</li>
+                  <li style="font-size: 1.2rem;">sare in codul functiei invocata cu argumentele date si ele transmite functiei</li>
+                  <li style="font-size: 1.2rem;">executa codul functiei (provoaca efectul dorit sau evalueaza rezultatele) si isi incheie sarcina</li>
+                  <li style="font-size: 1.2rem;">revine în locul imediat după invocare și își reia execuția</li>
+                  <br><br>
+                  <a style="font-size: 1.3rem;">Efectul urmatorului fragement de cod:</a><br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print()</a><br>
+                  <a style="font-size: 1.3rem;">este ca adauga la consola o linie noua. Practic este echivalent cu:</a><br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print("\n")</a><br>
+                  <a style="font-size: 1.3rem;">Functia print() poate fi invocata si mai multe argumente:</a><br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print("nimeni nu scrie","poezii","cu ochii deschisi")</a><br>
+                  <a style="font-size: 1.3rem;">Rezultatul va fi:</a><br>
+                  <a style="color:rgb(69, 137, 97); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;nimeni nu scrie poezii cu ochii deschisi</a><br><br>
+                  <a style="font-size: 1.3rem;">Rezulta ca functia print() cu mai multe argumente:</a>
+                  <li style="font-size: 1.2rem;">le afiseaza pe o singura linie</li>
+                  <li style="font-size: 1.2rem;">adauga un spatiu intre argumente (ca asa vrea el)</li>
+                  <br>
+                  <a style="font-size: 1.3rem;">Mecanismul <strong>cheie de argument</strong> (keyword arguments) permite schimbarea comportamentului unei functii. Forma pentru o <strong>cheie de argument</strong> (cheie de argument) este:</a>
+                  <li style="font-size: 1.2rem;">cuvantul cheie care identifica argumentul (ex: end)</li>
+                  <li style="font-size: 1.2rem;">=</li>
+                  <li style="font-size: 1.2rem;">valoare (ex: " si ")</li>
+                  <br><br>
+                  <a style="font-size: 1.3rem;"><strong>Cheie de argument: end</strong><br><br>
+                    De exemplu, pentru functia print() putem specifica sa nu mai puna \n (line noua) dupa afisarea la consola a argumentelor. In exemplul de mai jos am inlocuit "\n" cu " si ":
+                    </a><br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print("Afara este", "noapte", end=" si ")<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("pustiu.")<br></a>
+                  <a style="font-size: 1.3rem;">Rezultatul va fi:</a><br>
+                  <a style="color:rgb(69, 137, 97); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;Afara este noapte si pustiu.</a>
+                  <br><br>
+                  <a style="font-size: 1.3rem;"><strong>Cheie de argument: sep</strong><br><br>
+                    Alta cheie de argument pentru functia print() este sep (separator)
+                    </a><br>
+                  <a style="color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print("nu", "mai", "pune", "spatii", "intre noi", sep="-")<br></a>
+                  <a style="font-size: 1.3rem;">Rezultatul va fi:</a><br>
+                  <a style="color:rgb(69, 137, 97); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;nu-mai-pune-spatii-intre noi</a>
+                  <br><br>
+                  <a style="font-size: 1.3rem;">Deci, in Python, argumentul /parametrul unei functii poate fi:</a>
+                  <li style="font-size: 1.2rem;">pozitional (positional parameter)
+                    Argumentele poziționale sunt argumente care trebuie incluse în poziția sau ordinea corespunzătoare. Primul argument pozițional trebuie întotdeauna 
+                    să fie listat mai întâi atunci când funcția este apelată. Al doilea argument pozițional trebuie să fie enumerat al doilea, iar al treilea argument 
+                    pozițional al treilea etc.
+                  </li>
+                  <li style="font-size: 1.2rem;">cheie (keyword parameter)
+                    De exemplu, pentru functia print(), sep sau end sunt chei de argument.
+                    </li>
                   <br><br><br><br>
 
                   <!-- Funția input -->
@@ -101,8 +163,8 @@
                   <a style="font-size: 1.3rem;">&nbsp;&nbsp;&nbsp;&nbsp;Functia <strong>input()</strong> permite citirea de la tastatura. Rezultatul returnat este de tip String. De multe ori, avem nevoie sa convertim rezultatul dat de functia input() catre alt tip, de exemplu float sau int. Pentru acesta putem folosi urmatoarele functii:</a>
                   <br>
 
-                  <li style="font-size: 1.3rem;">funcția float()</li>
-                  <li style="font-size: 1.3rem;">funcția int()</li>
+                  <li style="font-size: 1.3rem;">funcția <strong>float()</strong></li>
+                  <li style="font-size: 1.3rem;">funcția <strong>int()</strong></li>
                   <br>
 
                   <a>Exemplu:</a>
@@ -134,29 +196,74 @@
 
                   <br><br><br><br>
 
-                  <!-- Argumentele funcției print -->
-                  <h2>Argumentele funcției print</h2>
+                  <!-- Operatori aritmetici -->
+                  <h1>Operatori aritmetici</h1>
+                  <br> <br>
+                  <ul>
+                    <li style="font-size: 1.3rem; margin-left: 15%; margin-right: 15%;"><a style="color: rgb(154, 52, 52);"><strong>+</strong></a> (adunare)</li>
+                    <li style="font-size: 1.3rem; margin-left: 15%; margin-right: 15%;"><a style="color: rgb(154, 52, 52);"><strong>-</strong></a> (scadere)</li>
+                    <li style="font-size: 1.3rem; margin-left: 15%; margin-right: 15%;"><a style="color: rgb(154, 52, 52);"><strong>*</strong></a> (inmultire) (rezultatul este un float, daca cel putin unul din argumente este float)</li>
+                    <li style="font-size: 1.3rem; margin-left: 15%; margin-right: 15%;"><a style="color: rgb(154, 52, 52);"><strong>/</strong></a> (impartire cu zecimale), ex: 7/2 = 2.3333333333333335 (rezultatul este intotdeauna un float)</li>
+                    <li style="font-size: 1.3rem; margin-left: 15%; margin-right: 15%;"><a style="color: rgb(154, 52, 52);"><strong>//</strong></a> (impartire intreaga, ex: 7//3 = 2) (rezultatul este un float, daca cel putin unul din argumente 
+                      este float si rotunjirea merge întotdeauna la numărul întreg mai mic , de exemplu -6 // 4 = -2, pentru ca -6 / 4 = -1.5, iar rotunjit de la cel mai intreg rezulta -2)</li>
+                    <li style="font-size: 1.3rem; margin-left: 15%; margin-right: 15%;"><a style="color: rgb(154, 52, 52);"><strong>%</strong></a> (modulo / restul impartirii)</li>
+                      <ul style="list-style-type: circle; margin-left: 20%; margin-right: 15%;">
+                        <li style="font-size: 1.2rem;">12 // 4.5 = 2.0</li>
+                        <li style="font-size: 1.2rem;">2.0 * 4.5 = 9.0</li>
+                        <li style="font-size: 1.2rem;">12 - 9.0 = 3.0</li>
+                      </ul>
+                    <li style="font-size: 1.3rem; margin-left: 15%; margin-right: 15%;"><a style="color: rgb(154, 52, 52);"><strong>**</strong></a> (ridicare la putere, ex: 2**4 = 16)</li>
+                  </ul>
+                  <br><br>
+                  <br><a style="font-size: 1.3rem;">Exemplu:</a><br>
+                  <a style="font-size: 1.5rem; color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;print(2+3)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(2-3)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(2*3)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(7/3)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(7//3)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(7%3)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(2**4)<br></a>
 
-                  <br><br><br><br>
+                    <br><a style="font-size: 1.3rem;">Rezultat:</a><br>
 
-                  <!-- Stilul vechi -->
-                  <h2>Stilul vechi</h2>
+                  <a style="font-size: 1.5rem; color:rgb(124, 142, 59); font-family:'Courier New', Courier, monospace;">&nbsp;&nbsp;&nbsp;&nbsp;5<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;-1<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;6<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;2.3333333333333335<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;2<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;1<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;16<br></a>
 
-                  <br><br><br><br>
-
-                  <!-- Formatarea ieșirii utilizând metoda format -->
-                  <h2>Formatarea ieșirii utilizând metoda format</h2>
-
-                  <br><br><br><br>
-
-                  <!-- Afisare folosind instrucțiunea for -->
-                  <h3>Afișare folosind instrucțiunea for</h3>
-
-                  <br><br><br><br>
-
-                  <!-- Stilul nou: șirurile formatate -->
-                  <h2>Stilul nou: șirurile formatate</h2>
-
+                  <br><a style="font-size: 1.3rem;">Ordinea operatiilor:</a><br>
+                  <li style="font-size: 1.2rem;"><strong>de la stanga la drepta (left-sided binding) pentru operatorul modulo</strong>, de exemplu: (9 % 6 % 2 = 1, adica ((9 % 6) % 2))</li>
+                  <li style="font-size: 1.2rem;"><strong>de la drepta la stanga (right-sided binding) pentru operatorul de ridicare la putere</strong>, de exemplu: 2 ** 2 ** 3 = 256, adica (2 ** (2 ** 3))</li>
+                  <br><br><a style="font-size: 1.3rem;">Prioritatea operatiilor (de la cele mai mari (1) la cele mai mici (4) priorități):</a><br>
+                  
+                  <table id="prioritytable">
+                    <tr>
+                      <th>Prioritate</th>
+                      <th>Operatori</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>+,-(operatori binari)</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>**</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>*,/,//,%</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>+,-(operatori unari)</td>
+                    </tr>
+                  </table>
+                  
+                  <br><br><a style="font-size: 1.3rem;">Conform tabelului de mai sus <strong>multiplicarea/inmultirea precede (dex: a exista, a se produce înainte de altceva în timp) adunarea</strong>, adica se intampla inaintea adunarii (exemplu: 2+3*4 este echivalent cu 2+(3*4))</a>
+                  
                   <br><br><br><br>
         
                 </div>

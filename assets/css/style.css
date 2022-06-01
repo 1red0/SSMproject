@@ -45,6 +45,20 @@ p{
   background-color: #04AA6D;
   color: white;
 }
+
+#prioritytable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#prioritytable th, #prioritytable td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#prioritytable tr:hover {background-color: rgb(85, 130, 131);}
+
 .cuprins{ 
   position: absolute;
   margin: auto;
